@@ -44,8 +44,8 @@ function btnInspiration() {
 
 function renderHTML(data) {
 
-    var htmlString = '"' + data.contents.quote + '"' + '<p>' +
-        '--' + data.contents.author + '</p>';
+    var htmlString = '"' + data.contents.quote + '"' +
+        ' --' + data.contents.author;
 
     //quote.insertAdjacentHTML('beforeend', htmlString); -> use if I want to make this HTML and not text
     document.getElementById('quote').textContent = htmlString;
