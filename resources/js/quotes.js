@@ -43,9 +43,14 @@ function btnInspiration() {
 }
 
 function renderHTML(data) {
-
-    var htmlString = '"' + data.contents.quote + '"' +
-        ' --' + data.contents.author;
+    if (data.contents.author !== null) {
+        var htmlString = '"' + data.contents.quote + '"' +
+            ' --' + data.contents.author;
+    } else {
+        data.contents.author = '(Anonymous)';
+        var htmlString = '"' + data.contents.quote + '"' +
+            ' --' + data.contents.author;
+    }
 
     //quote.insertAdjacentHTML('beforeend', htmlString); -> use if I want to make this HTML and not text
     document.getElementById('quote').textContent = htmlString;

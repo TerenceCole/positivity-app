@@ -26,13 +26,33 @@ REUSABLE COMPONENTS
     margin: 0 auto;
 }
 
-h1 {
+section {
+    padding: 20px 0;
+    text-align: center;
+}
+
+/*--- HEADINGS ---*/
+
+h1,
+h2 {
     margin: 0;
     color: #fff;
     font-size: 240%;
     font-weight: 500;
     word-spacing: 2px;
     text-shadow: 2px 2px 4px #000;
+}
+
+h2 {
+    font-size: 150%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*--- PARAGRAPH & ICON STYLING ---*/
+
+p {
+    font-size: 90%;
 }
 
 /*--- BUTTONS ---*/
