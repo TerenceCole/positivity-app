@@ -1,5 +1,13 @@
+/*******************************
+GLOBAL VARIABLES FOR APP
+*******************************/
+
 var clave = '';
 var quote = document.getElementById('quote');
+var welcomeAffirmationWords = ['loved', 'cherished', 'awesome', 'brilliant', 'amazing', 'a star', 'powerful',
+    'brilliant', 'super', 'one of a kind', 'tops in my book', 'the best', 'wonderful', 'a genius',
+    'fantastic', 'a superstar', 'courageous', 'brave', 'charming', 'fearless'];
+
 
 /*******************************
 APP BUTTONS
@@ -10,9 +18,20 @@ document.querySelector('.btn-inspiration').addEventListener('click', btnInspirat
 //document.querySelector('#button').addEventListener('click', btnRandom);
 
 
+/*******************************
+RANDOMLY SELECTS AND DISPLAYS A WELCOME AFFIRMATION
+*******************************/
+
+function welcomeAffirmation() {
+    var myRandom =  Math.floor(Math.random() * welcomeAffirmationWords.length);
+    document.getElementById('welcome').innerHTML = welcomeAffirmationWords[myRandom];
+    //document.getElementById('welcome').textContent = welcomeAffirmationWords[myRandom]; --> Another way to display the affimation
+}
+welcomeAffirmation();
+
 
 /*******************************
-RANDOMLY SELECTS A QUOTE FROM DATABASE
+RANDOMLY SELECTS AND DISPLAYS A QUOTE FROM DATABASE
 *******************************/
 
 
