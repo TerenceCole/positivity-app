@@ -49,10 +49,31 @@ h2 {
     margin-bottom: 20px;
 }
 
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #f2b234;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
 /*--- PARAGRAPH & ICON STYLING ---*/
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
 
 p {
     font-size: 90%;
+}
+
+.icon-spacing {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /*--- BUTTONS ---*/
@@ -125,6 +146,14 @@ header {
     left: 25%;
     /*transform: translate(-25%, -25%);*/
 }
+
+/*.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    text-align: center;
+    transform: translate(-25%, -25%);*/
+}*/
+
 
 .quoteStyle {
     font-style: italic;
