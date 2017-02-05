@@ -27,7 +27,7 @@ REUSABLE COMPONENTS
 }
 
 section {
-    padding: 20px 0;
+    padding: 20px 0 0 0;
     text-align: center;
 }
 
@@ -59,7 +59,7 @@ h2:after {
     margin-top: 20px;
 }
 
-/*--- PARAGRAPH & ICON STYLING ---*/
+/*--- PARAGRAPH ---*/
 
 .long-copy {
     line-height: 145%;
@@ -71,10 +71,6 @@ p {
     font-size: 90%;
 }
 
-.icon-spacing {
-    margin-left: 10px;
-    margin-right: 10px;
-}
 
 /*--- BUTTONS ---*/
 
@@ -134,6 +130,7 @@ HEADER
 
 header {
     background-image: linear-gradient(rgba(0, 94, 255, 0.6), rgba(76, 0, 103, 0.6)), url(img/hero.jpg);
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -161,6 +158,8 @@ header {
     line-height: 145%;
     width: 60%;
 }
+
+
 
 /*******************************
 NAVIGATION
@@ -197,4 +196,43 @@ NAVIGATION
 .main-nav li a:hover,
 .main-nav li a:active{
     border-bottom: 2px solid #e49c0f;
+}
+
+
+/*******************************
+FOOTER
+*******************************/
+
+.social-links {
+    list-style: none;
+    text-align: center;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.icon-spacing {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #777;
+}
+
+.fa-youtube,
+.fa-facebook,
+.fa-twitter {
+    transition: color 0.2s;
+}
+
+.fa-youtube:hover {
+    color: #bb0000;
+}
+
+.fa-facebook:hover {
+    color: #3b5998;
+}
+
+.fa-twitter:hover {
+    color: #55acee;
 }
