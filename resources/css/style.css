@@ -158,12 +158,14 @@ NAVIGATION
     float: left;
     text-shadow: 1px 1px 2px #000;
     margin-top: 10px;
+    margin-left: 10px;
 }
 
 .main-nav {
     float: right;
     list-style: none;
     margin-top: 10px;
+    margin-right: 10px;
 }
 
 .main-nav li {
