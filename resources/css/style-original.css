@@ -87,8 +87,8 @@ p {
 .btn-love {
     border: 3px solid #173D8D;
     background-color: #f053dc;
-    margin-right: 20px;
-    /*margin-left: 125px;*/
+    margin-right: 50px;
+    margin-left: 125px;
 }
 
 .btn-love:hover,
@@ -96,13 +96,12 @@ p {
     background-color: #eb15cf;
     border: 3px solid #b1c6f2;
     font-weight: 400;
-    /*margin-right: 49px;*/
+    margin-right: 49px;
 }
 
 .btn-inspiration {
     border: 3px solid #173D8D;
     background-color: #f2b234;
-    margin-left: 20px;
 }
 
 .btn-inspiration:hover,
@@ -110,7 +109,7 @@ p {
     background-color: #e49c0f;
     border: 3px solid #b1c6f2;
     font-weight: 400;
-    /*margin-left: -3px;*/
+    margin-left: -3px;
 }
 
 /*
@@ -136,7 +135,7 @@ header {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    height: 125vh;
+    height: 100vh;
 }
 
 .hero-text-box {
@@ -152,15 +151,21 @@ header {
     text-align: center;
 }
 
+/*.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    text-align: center;
+    transform: translate(-25%, -25%);
+}*/
+
 
 .quoteStyle {
     font-style: italic;
     font-size: 120%;
     line-height: 145%;
-    text-align: center;
-    width: 70%;
-    margin-left: 15%;
-
+    width: 60%;
+    padding-bottom: 200px;
+    margin-bottom: 200px;
 }
 
 
