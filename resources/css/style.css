@@ -114,7 +114,7 @@ p {
 
 
 /*******************************
-HEADER
+HEADER, QUOTES, AND IMAGES
 *******************************/
 
 header {
@@ -122,7 +122,7 @@ header {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    height: 125vh;
+    height: 140vh;
 }
 
 .hero-text-box {
@@ -135,6 +135,11 @@ header {
 .hero-text-box-alt {
     padding-top: 100px;
     text-align: center;
+}
+
+/*should look into making this fade in*/
+.quoteImages {
+    margin-top: 20px;
 }
 
 

@@ -15,7 +15,7 @@ APP BUTTONS AND CLICK EVENTS
 
 document.querySelector('.btn-love').addEventListener('click', btnLove);
 document.querySelector('.btn-inspiration').addEventListener('click', btnInspiration);
-//document.querySelector('#button').addEventListener('click', btnRandom);
+document.querySelector('#images').addEventListener('click', quoteImages);
 
 
 /*******************************
@@ -42,7 +42,7 @@ function btnLove() {
 
     ourRequest.onload = function() {
         var ourData = JSON.parse(ourRequest.responseText);
-        console.log(ourData.contents.quote);
+        // console.log(ourData.contents.quote);
         renderHTML(ourData);
     };
     ourRequest.send();
@@ -55,7 +55,7 @@ function btnInspiration() {
 
     ourRequest.onload = function() {
         var ourData = JSON.parse(ourRequest.responseText);
-        console.log(ourData.contents.quote);
+        // console.log(ourData.contents.quote);
         renderHTML(ourData);
     };
     ourRequest.send();
@@ -82,30 +82,22 @@ RANDOMLY SELECTS AND DISPLAYS AN IMAGE PICTURE FROM DATABASE
 *******************************/
 
 
-function btnLove() {
-    var category = '&category=love';
+function quoteImages() {
     var ourRequest = new XMLHttpRequest(); //opens new XML request
-    ourRequest.open('POST', 'http://quotes.rest/quote/search.json?' + clave + category); //gets JSON data
+    ourRequest.open('POST', 'http://quotes.rest/quote/image/search.json?privae=false&' + clave); //gets JSON data
 
     ourRequest.onload = function() {
         var ourData = JSON.parse(ourRequest.responseText);
-        console.log(ourData.contents.quote);
-        renderHTML(ourData);
+        // console.log(ourData.contents.qimage.download_uri);
+        renderImage(ourData);
     };
     ourRequest.send();
 }
 
-function renderHTML(data) {
-    if (data.contents.author !== null) {
-        var htmlString = '"' + data.contents.quote + '"' +
-            ' --' + data.contents.author;
-    } else {
-        data.contents.author = '(Anonymous)';
-        var htmlString = '"' + data.contents.quote + '"' +
-            ' --' + data.contents.author;
-    }
+function renderImage(data) {
+    var quoteImage = '<img src="' + data.contents.qimage.download_uri + '"/>';
 
-    //quote.insertAdjacentHTML('beforeend', htmlString); -> use if I want to make this HTML and not text
-    document.getElementById('quote').textContent = htmlString;
+    document.getElementById('displayImage').innerHTML = quoteImage;
+
 
 }
