@@ -88,7 +88,6 @@ p {
     border: 3px solid #173D8D;
     background-color: #f053dc;
     margin-right: 20px;
-    /*margin-left: 125px;*/
 }
 
 .btn-love:hover,
@@ -96,7 +95,7 @@ p {
     background-color: #eb15cf;
     border: 3px solid #b1c6f2;
     font-weight: 400;
-    /*margin-right: 49px;*/
+    margin-right: 19px;
 }
 
 .btn-inspiration {
@@ -110,22 +109,9 @@ p {
     background-color: #e49c0f;
     border: 3px solid #b1c6f2;
     font-weight: 400;
-    /*margin-left: -3px;*/
+    margin-left: 17px;
 }
 
-/*
-.btn-random {
-    border: 3px solid #173D8D;
-    background-color: #4BCE4B;
-}
-
-.btn-random:hover,
-.btn-random:active {
-    background-color: #119D11;
-    border: 3px solid #b1c6f2;
-    font-weight: 400;
-}
-*/
 
 /*******************************
 HEADER
@@ -144,7 +130,6 @@ header {
     width: 1140px;
     top: 25%;
     left: 25%;
-    /*transform: translate(-25%, -25%);*/
 }
 
 .hero-text-box-alt {
