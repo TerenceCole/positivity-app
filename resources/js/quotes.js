@@ -2,7 +2,7 @@
 GLOBAL VARIABLES FOR APP
 *******************************/
 
-var clave = 'api_key=ZkuAYIBZVaM94IR3cavwFAeF';
+var clave = '';
 var quote = document.getElementById('quote');
 var welcomeAffirmationWords = ['loved', 'cherished', 'awesome', 'brilliant', 'amazing', 'a star', 'powerful',
     'brilliant', 'super', 'one of a kind', 'tops in my book', 'the best', 'wonderful', 'a genius',
