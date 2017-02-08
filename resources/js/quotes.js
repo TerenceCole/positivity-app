@@ -2,7 +2,7 @@
 GLOBAL VARIABLES FOR APP
 *******************************/
 
-var clave = '';
+var clave = 'api_key=ZkuAYIBZVaM94IR3cavwFAeF';
 var quote = document.getElementById('quote');
 var welcomeAffirmationWords = ['loved', 'cherished', 'awesome', 'brilliant', 'amazing', 'a star', 'powerful',
     'brilliant', 'super', 'one of a kind', 'tops in my book', 'the best', 'wonderful', 'a genius',
@@ -40,7 +40,7 @@ RANDOMLY SELECTS AND DISPLAYS A TEXT QUOTE FROM DATABASE
 function btnLove() {
     var category = '&category=love';
     var ourRequest = new XMLHttpRequest(); //opens new XML request
-    ourRequest.open('POST', 'http://quotes.rest/quote/search.json?' + clave + category); //gets JSON data
+    ourRequest.open('POST', 'https://quotes.rest/quote/search.json?' + clave + category); //gets JSON data
 
     ourRequest.onload = function() {
         var ourData = JSON.parse(ourRequest.responseText);
@@ -53,7 +53,7 @@ function btnLove() {
 function btnInspiration() {
     var category = '&category=inspiration';
     var ourRequest = new XMLHttpRequest(); //opens new XML request
-    ourRequest.open('POST', 'http://quotes.rest/quote/search.json?' + clave + category); //gets JSON data
+    ourRequest.open('POST', 'https://quotes.rest/quote/search.json?' + clave + category); //gets JSON data
 
     ourRequest.onload = function() {
         var ourData = JSON.parse(ourRequest.responseText);
@@ -92,7 +92,7 @@ RANDOMLY SELECTS AND DISPLAYS AN IMAGE PICTURE FROM DATABASE
 
 function quoteImages() {
     var ourRequest = new XMLHttpRequest(); //opens new XML request
-    ourRequest.open('POST', 'http://quotes.rest/quote/image/search.json?privae=false&' + clave); //gets JSON data
+    ourRequest.open('POST', 'https://quotes.rest/quote/image/search.json?privae=false&' + clave); //gets JSON data
 
     ourRequest.onload = function() {
         var ourData = JSON.parse(ourRequest.responseText);

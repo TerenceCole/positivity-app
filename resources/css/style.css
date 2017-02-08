@@ -126,22 +126,19 @@ header {
 }
 
 .hero-text-box {
-    position: absolute;
-    width: 1140px;
-    top: 25%;
-    left: 25%;
-}
-
-.hero-text-box-alt {
     padding-top: 100px;
     text-align: center;
 }
 
 /*should look into making this fade in*/
+img {
+    max-width: 100%;
+    border-radius: 25px;
+}
+
 .quoteImages {
     margin-top: 20px;
 }
-
 
 .quoteStyle {
     font-style: italic;
