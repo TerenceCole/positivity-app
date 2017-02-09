@@ -2,7 +2,7 @@
 GLOBAL VARIABLES FOR APP
 *******************************/
 
-var clave = 'api_key=ZkuAYIBZVaM94IR3cavwFAeF';
+var clave = '';
 var quote = document.getElementById('quote');
 var welcomeAffirmationWords = ['loved', 'cherished', 'awesome', 'brilliant', 'amazing', 'a star', 'powerful',
     'brilliant', 'super', 'one of a kind', 'tops in my book', 'the best', 'wonderful', 'a genius',
@@ -27,7 +27,6 @@ RANDOMLY SELECTS AND DISPLAYS A WELCOME AFFIRMATION
 function welcomeAffirmation() {
     var myRandom =  Math.floor(Math.random() * welcomeAffirmationWords.length);
     document.getElementById('welcome').innerHTML = welcomeAffirmationWords[myRandom];
-    //document.getElementById('welcome').textContent = welcomeAffirmationWords[myRandom]; --> Another way to display the affimation
 }
 welcomeAffirmation();
 
@@ -112,6 +111,5 @@ function renderImage(data) {
     var quoteImage = '<img src="' + data.contents.qimage.download_uri + '"/>';
 
     document.getElementById('displayImage').innerHTML = quoteImage;
-
 
 }
