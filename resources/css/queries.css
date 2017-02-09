@@ -17,7 +17,52 @@
 }
 
 
-/* Small phones: from 0 to 320px - iPhone 5 */
+/* Landscape orientation for iPhone 6+/7+ */
+@media only screen and (max-height: 414px) {
+
+    header {
+        height: 200vh;
+    }
+
+}
+
+/* Landscape orientation for iPhone 6/7 */
+@media only screen and (max-height: 375px) {
+
+    header {
+        height: 200vh;
+    }
+
+}
+
+/* Landscape orientation for iPhone 5 */
+@media only screen and (max-height: 320px) {
+
+    header {
+        height: 250vh;
+    }
+
+}
+
+/* Portrait orientation for iPhone 6+/7+ */
+@media only screen and (max-height: 736px) {
+
+    header {
+        height: 200vh;
+    }
+
+}
+
+/* Portrait orientation for iPhone 6/7 */
+@media only screen and (max-height: 667px) {
+
+    header {
+        height: 200vh;
+    }
+
+}
+
+/* Portrait orientation for iPhone 5 */
 @media only screen and (max-width: 320px) {
 
     header {
